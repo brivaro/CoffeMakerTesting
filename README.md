@@ -1,5 +1,5 @@
 <div align="center">
-<h2>🍵 Coffee Maker in JAVA using JUnit & Mockito for Testing</h1>
+<h1>🍵 Coffee Maker in JAVA using JUnit & Mockito for Testing</h1>
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/junit/junit-original.svg" height="80" alt="junit logo" />
 </div>
 
