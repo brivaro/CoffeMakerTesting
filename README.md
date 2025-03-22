@@ -18,9 +18,8 @@ This project implements a Coffee Maker application in Java, complete with a robu
 - **Java** - Main application development.
 - **JUnit** - Framework for unit testing.
 - **Mockito** - Library for creating mock objects.
-- **Emojis** - To add a fun and engaging touch to the project! 🎉
 
 ### Getting Started
 1. **Clone the Repository:**
    ```bash
-   git clone https://your-repository-url.git
+   git clone https://github.com/brivaro/CoffeMakerTesting
