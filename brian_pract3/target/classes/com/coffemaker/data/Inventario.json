@@ -1,0 +1,20 @@
+{
+  "ingredientes": [
+    {
+      "nombre": "chocolate",
+      "cantidad": 12
+    },
+    {
+      "nombre": "sugar",
+      "cantidad": 10
+    },
+    {
+      "nombre": "coffee",
+      "cantidad": 11
+    },
+    {
+      "nombre": "milk",
+      "cantidad": 14
+    }
+  ]
+}
