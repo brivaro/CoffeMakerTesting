@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.1" name="com.coffemaker.InventoryJsonTest" time="1.403" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.1" name="com.coffemaker.InventoryJsonTest" time="1.064" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="23"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="user.country" value="ES"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-23\bin"/>
-    <property name="sun.java.command" value="C:\Users\brian\AppData\Local\Temp\surefire11430270559124488171\surefirebooter-20250323220025594_3.jar C:\Users\brian\AppData\Local\Temp\surefire11430270559124488171 2025-03-23T22-00-25_288-jvmRun1 surefire-20250323220025594_1tmp surefire_0-20250323220025594_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\brian\AppData\Local\Temp\surefire15178574024731097789\surefirebooter-20250323224806414_3.jar C:\Users\brian\AppData\Local\Temp\surefire15178574024731097789 2025-03-23T22-48-06_198-jvmRun1 surefire-20250323224806414_1tmp surefire_0-20250323224806414_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="test" value="${packageClassName}"/>
     <property name="surefire.test.class.path" value="D:\UNIVERSIDAD - EOI\5º MASTER\2º CUATRI\ACG\PRACTICAS\JUnit y Mockito testing CoffeMaker\CoffeMakerTesting\target\test-classes;D:\UNIVERSIDAD - EOI\5º MASTER\2º CUATRI\ACG\PRACTICAS\JUnit y Mockito testing CoffeMaker\CoffeMakerTesting\target\classes;C:\Users\brian\.m2\repository\com\google\code\gson\gson\2.10\gson-2.10.jar;C:\Users\brian\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.11.0\junit-jupiter-api-5.11.0.jar;C:\Users\brian\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\brian\.m2\repository\org\junit\platform\junit-platform-commons\1.11.0\junit-platform-commons-1.11.0.jar;C:\Users\brian\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\brian\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.11.0\junit-jupiter-params-5.11.0.jar;C:\Users\brian\.m2\repository\org\mockito\mockito-core\5.8.0\mockito-core-5.8.0.jar;C:\Users\brian\.m2\repository\net\bytebuddy\byte-buddy\1.14.10\byte-buddy-1.14.10.jar;C:\Users\brian\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.10\byte-buddy-agent-1.14.10.jar;C:\Users\brian\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\brian\.m2\repository\org\mockito\mockito-junit-jupiter\5.8.0\mockito-junit-jupiter-5.8.0.jar;C:\Users\brian\.m2\repository\org\mockito\mockito-inline\5.2.0\mockito-inline-5.2.0.jar;"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\brian\AppData\Local\Temp\surefire11430270559124488171\surefirebooter-20250323220025594_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\brian\AppData\Local\Temp\surefire15178574024731097789\surefirebooter-20250323224806414_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="23.0.2+7-58"/>
@@ -60,7 +60,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="67.0"/>
   </properties>
-  <testcase name="testInventoryInitializationWithMock" classname="com.coffemaker.InventoryJsonTest" time="1.4">
+  <testcase name="testInventoryInitializationWithMock" classname="com.coffemaker.InventoryJsonTest" time="1.062">
     <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (C:\Users\brian\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.10\byte-buddy-agent-1.14.10.jar)
 WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
 WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information

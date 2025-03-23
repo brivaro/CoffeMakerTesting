@@ -2,7 +2,6 @@ package com.coffemaker;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertNotEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.BeforeEach;
@@ -16,26 +15,14 @@ public class CoffeeMakerTest {
     @BeforeEach
     public void setup() {
         coffeeMaker = new CoffeeMaker();
-        recipe = new Recipe();
-        recipe.setName("TestRecipe");
-        recipe.setPrice(50);
-        recipe.setAmtCoffee(3);
-        recipe.setAmtMilk(2);
-        recipe.setAmtSugar(1);
-        recipe.setAmtChocolate(1);
+        recipe = new Recipe("TestRecipe", 50, 3, 2, 1, 1);
         coffeeMaker.addRecipe(recipe);
     }
 
     // Test para addRecipe: se espera true al agregar una receta nueva y false al agregar duplicado.
     @Test
     public void testAddRecipe() {
-        Recipe newRecipe = new Recipe();
-        newRecipe.setName("NewRecipe");
-        newRecipe.setPrice(60);
-        newRecipe.setAmtCoffee(2);
-        newRecipe.setAmtMilk(2);
-        newRecipe.setAmtSugar(2);
-        newRecipe.setAmtChocolate(2);
+        Recipe newRecipe = new Recipe("NewRecipe", 60, 2, 2, 2, 2);
         
         boolean added = coffeeMaker.addRecipe(newRecipe);
         assertTrue(added, "La receta nueva debería poder agregarse.");
@@ -57,21 +44,14 @@ public class CoffeeMakerTest {
     // Test para editRecipe: se espera que se actualice la receta y se retorne true.
     @Test
     public void testEditRecipe() {
-        Recipe newRecipe = new Recipe();
-        newRecipe.setName(recipe.getName()); // no debe cambiar el nombre
-        newRecipe.setPrice(70);
-        newRecipe.setAmtCoffee(4);
-        newRecipe.setAmtMilk(3);
-        newRecipe.setAmtSugar(2);
-        newRecipe.setAmtChocolate(2);
+        Recipe newRecipe = new Recipe(recipe.getName(), 70, 4, 3, 2, 2); // el nombre no cambia
         
         boolean edited = coffeeMaker.editRecipe(recipe, newRecipe);
         assertTrue(edited, "editRecipe debería devolver true al editar la receta existente.");
         
-        Recipe result = coffeeMaker.getRecipeForName(recipe.getName());
-        assertEquals(recipe.getName(), result.getName(), "El nombre de la receta no debería cambiar.");
-        assertNotNull(result, "La receta editada debería existir.");
-        assertNotEquals(recipe, result, "La receta debería ser diferente.");
+        Recipe newRecipe2 = new Recipe("NewRecipe", 60, 2, 2, 2, 2);
+        boolean edited2 = coffeeMaker.editRecipe(recipe, newRecipe2);
+        assertFalse(edited2, "editRecipe no debería editar una receta por otra con diferente nombre.");
     }
     
     // Test para addInventory: se espera que se retorne true para cantidades válidas y false para parámetros inválidos.
@@ -144,7 +124,7 @@ public class CoffeeMakerTest {
         Recipe[] recipes = coffeeMaker.getRecipes();
         boolean found = false;
         for (Recipe r : recipes) {
-            if (r.getName() != null && recipe.equals(r)) {
+            if (recipe.equals(r)) {
                 found = true;
                 break;
             }

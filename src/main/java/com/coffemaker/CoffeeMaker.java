@@ -96,8 +96,8 @@ public class CoffeeMaker {
         boolean canEditRecipe = false;
         if(!"No data".equals(oldRecipe.getName())) {
             for(int i = 0; i < NUM_RECIPES; i++) {
-                if(recipeArray[i].getName() != null) {
-                    if(oldRecipe.equals(recipeArray[i])) { 
+                if(!"No data".equals(recipeArray[i].getName())) {
+                    if(oldRecipe.equals(recipeArray[i]) && oldRecipe.getName().equals(newRecipe.getName())) { 
                         canEditRecipe = true;
                         if(canEditRecipe) {
                             recipeArray[i] = newRecipe;
@@ -190,7 +190,7 @@ public class CoffeeMaker {
 	public Recipe getRecipeForName(String name) {
 		Recipe r = new Recipe();
 		for(int i = 0; i < NUM_RECIPES; i++) {
-			if(recipeArray[i].getName() != null) { 
+			if(!"No data".equals(recipeArray[i].getName())) { 
 				if((recipeArray[i].getName()).equals(name)) {
 					r = recipeArray[i];
 				}
