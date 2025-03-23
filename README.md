@@ -6,7 +6,7 @@
 ---
 
 ### 💡 Overview
-This project implements a Coffee Maker application in Java, complete with a robust test suite using **JUnit** for unit testing and **Mockito** for mocking dependencies. The tests ensure the reliability of core functionalities including recipe management, inventory tracking, and the coffee-making process.
+This project implements a Coffee Maker application in Java, complete with a robust test suite using **JUnit** for unit testing and **Mockito** for mocking dependencies. The tests ensure the reliability of core functionalities including recipe management, inventory tracking, and the coffee-making process. In folder `pdf` you can read the full explainatory memory about the project.
 
 ### 🗳 Features
 - **Recipe Management:** Add, edit, and delete recipes while validating inputs.
