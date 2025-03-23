@@ -2,6 +2,7 @@ package com.coffemaker;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.BeforeEach;
@@ -57,7 +58,7 @@ public class CoffeeMakerTest {
     @Test
     public void testEditRecipe() {
         Recipe newRecipe = new Recipe();
-        newRecipe.setName("EditedRecipe");
+        newRecipe.setName(recipe.getName()); // no debe cambiar el nombre
         newRecipe.setPrice(70);
         newRecipe.setAmtCoffee(4);
         newRecipe.setAmtMilk(3);
@@ -67,9 +68,10 @@ public class CoffeeMakerTest {
         boolean edited = coffeeMaker.editRecipe(recipe, newRecipe);
         assertTrue(edited, "editRecipe debería devolver true al editar la receta existente.");
         
-        Recipe result = coffeeMaker.getRecipeForName("EditedRecipe");
+        Recipe result = coffeeMaker.getRecipeForName(recipe.getName());
+        assertEquals(recipe.getName(), result.getName(), "El nombre de la receta no debería cambiar.");
         assertNotNull(result, "La receta editada debería existir.");
-        assertEquals("EditedRecipe", result.getName(), "El nombre de la receta editada debe coincidir.");
+        assertNotEquals(recipe, result, "La receta debería ser diferente.");
     }
     
     // Test para addInventory: se espera que se retorne true para cantidades válidas y false para parámetros inválidos.
@@ -88,11 +90,27 @@ public class CoffeeMakerTest {
     @Test
     public void testCheckInventory() {
         Inventory inv = coffeeMaker.checkInventory();
+        int coffee = inv.getCoffee();
+        int milk = inv.getMilk();
+        int sugar = inv.getSugar();
+        int chocolate = inv.getChocolate();
         assertNotNull(inv, "El inventario no debería ser nulo.");
-        assertTrue(inv.getCoffee() >= 0, "El inventario de café debe ser mayor o igual a 0.");
-        assertTrue(inv.getMilk() >= 0, "El inventario de leche debe ser mayor o igual a 0.");
-        assertTrue(inv.getSugar() >= 0, "El inventario de azúcar debe ser mayor o igual a 0.");
-        assertTrue(inv.getChocolate() >= 0, "El inventario de chocolate debe ser mayor o igual a 0.");
+        assertTrue(coffee >= 0, "El inventario de café debe ser mayor o igual a 0.");
+        assertTrue(milk >= 0, "El inventario de leche debe ser mayor o igual a 0.");
+        assertTrue(sugar >= 0, "El inventario de azúcar debe ser mayor o igual a 0.");
+        assertTrue(chocolate >= 0, "El inventario de chocolate debe ser mayor o igual a 0.");
+
+        int amtPaid = 100; // dinero para pagar la receta
+        coffeeMaker.makeCoffee(recipe, amtPaid);
+        Inventory invDespues = coffeeMaker.checkInventory();
+        assertTrue(invDespues.getCoffee() < coffee, 
+                   "El inventario de café no se actualizó correctamente (debería disminuir).");
+        assertTrue(invDespues.getMilk() < milk, 
+                   "El inventario de leche no se actualizó correctamente (debería disminuir).");
+        assertTrue(invDespues.getSugar() < sugar, 
+                   "El inventario de azúcar no se actualizó correctamente (debería disminuir).");
+        assertTrue(invDespues.getChocolate() < chocolate, 
+                   "El inventario de chocolate no se actualizó correctamente (debería disminuir).");
     }
     
     // Test para makeCoffee: se verifica que se devuelva el cambio correcto y que se actualice el inventario.

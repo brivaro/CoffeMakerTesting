@@ -93,7 +93,7 @@ public class Recipe {
     	}
     } 
     public boolean equals(Recipe r) {
-        return (this.name).equals(r.getName());
+        return (this.name).equals(r.getName()) && this.price == r.getPrice() && this.amtCoffee == r.getAmtCoffee() && this.amtMilk == r.getAmtMilk() && this.amtSugar == r.getAmtSugar() && this.amtChocolate == r.getAmtChocolate();
     }
 
     @Override

@@ -1,0 +1,5 @@
+# Created at 2025-03-23T16:18:13.387
+Boot Manifest-JAR contains absolute paths in classpath 'D:\UNIVERSIDAD - EOI\5º MASTER\2º CUATRI\ACG\PRACTICAS\JUnit y Mockito testing CoffeMaker\CoffeMakerTesting\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+'other' has different root
+
