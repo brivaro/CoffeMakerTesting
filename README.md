@@ -1,6 +1,15 @@
 <div align="center">
-<h1>🍵 Coffee Maker in JAVA using JUnit & Mockito for Testing</h1>
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/junit/junit-original.svg" height="80" alt="junit logo" />
+
+<h1>🍵 Coffee Maker in JAVA using JUnit & Mockito for Testing</h1>
+
+<p>
+  <img src="https://img.shields.io/badge/Java-17-blue" alt="Java 17">
+  <img src="https://img.shields.io/badge/Maven-3.9.6-C71A36" alt="Maven">
+  <img src="https://img.shields.io/badge/JUnit-5.11.0-25A162" alt="JUnit 5.11.0">
+  <img src="https://img.shields.io/badge/Mockito-5.16.1-blueviolet" alt="Mockito 5.16.1">
+  <img src="https://img.shields.io/badge/ByteBuddy-1.17.3-orange" alt="ByteBuddy 1.17.3">
+</p>
 </div>
 
 ---
