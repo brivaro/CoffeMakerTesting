@@ -1,3 +1,4 @@
 D:\UNIVERSIDAD - EOI\5º MASTER\2º CUATRI\ACG\PRACTICAS\JUnit y Mockito testing CoffeMaker\CoffeMakerTesting\src\test\java\com\coffemaker\CoffeeMakerTest.java
-D:\UNIVERSIDAD - EOI\5º MASTER\2º CUATRI\ACG\PRACTICAS\JUnit y Mockito testing CoffeMaker\CoffeMakerTesting\src\test\java\com\coffemaker\InventoryJsonTest.java
-D:\UNIVERSIDAD - EOI\5º MASTER\2º CUATRI\ACG\PRACTICAS\JUnit y Mockito testing CoffeMaker\CoffeMakerTesting\src\test\java\com\coffemaker\InventoryTestable.java
+D:\UNIVERSIDAD - EOI\5º MASTER\2º CUATRI\ACG\PRACTICAS\JUnit y Mockito testing CoffeMaker\CoffeMakerTesting\src\test\java\com\coffemaker\InventoryJsonTestMOCK.java
+D:\UNIVERSIDAD - EOI\5º MASTER\2º CUATRI\ACG\PRACTICAS\JUnit y Mockito testing CoffeMaker\CoffeMakerTesting\src\test\java\com\coffemaker\InventoryJsonTestSPY.java
+D:\UNIVERSIDAD - EOI\5º MASTER\2º CUATRI\ACG\PRACTICAS\JUnit y Mockito testing CoffeMaker\CoffeMakerTesting\src\test\java\com\coffemaker\RecipeTest.java

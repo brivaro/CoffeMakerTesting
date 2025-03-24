@@ -1,2 +1,4 @@
 com\coffemaker\CoffeeMakerTest.class
-com\coffemaker\InventoryJsonTest.class
+com\coffemaker\InventoryJsonTestSPY.class
+com\coffemaker\RecipeTest.class
+com\coffemaker\InventoryJsonTestMOCK.class
