@@ -1,7 +1,7 @@
 <div align="center">
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/junit/junit-original.svg" height="80" alt="junit logo" />
 
-<h1>🍵 Coffee Maker in JAVA using JUnit & Mockito for Testing</h1>
+<h1><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Food/Hot%20Beverage.png" alt="Hot Beverage" width="25" height="25" /> Coffee Maker in JAVA using JUnit & Mockito for Testing</h1>
 
 <p>
   <img src="https://img.shields.io/badge/Java-17-blue" alt="Java 17">
