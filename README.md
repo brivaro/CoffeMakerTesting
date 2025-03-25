@@ -1,5 +1,6 @@
 <div align="center">
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/junit/junit-original.svg" height="80" alt="junit logo" />
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Food/Hot%20Beverage.png" alt="Hot Beverage" width="100" height="100" />
 
 <h1>🍵 Coffee Maker in JAVA using JUnit & Mockito for Testing</h1>
 
@@ -11,7 +12,6 @@
   <img src="https://img.shields.io/badge/ByteBuddy-1.17.3-orange" alt="ByteBuddy 1.17.3">
 </p>
 
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Food/Hot%20Beverage.png" alt="Hot Beverage" width="100" height="100" />
 </div>
 
 ---
