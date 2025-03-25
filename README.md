@@ -11,7 +11,7 @@
   <img src="https://img.shields.io/badge/ByteBuddy-1.17.3-orange" alt="ByteBuddy 1.17.3">
 </p>
 
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Food/Hot%20Beverage.png" alt="Hot Beverage" width="400" height="400" />
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Food/Hot%20Beverage.png" alt="Hot Beverage" width="100" height="100" />
 </div>
 ---
 
