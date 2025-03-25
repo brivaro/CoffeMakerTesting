@@ -10,10 +10,9 @@
   <img src="https://img.shields.io/badge/Mockito-5.16.1-blueviolet" alt="Mockito 5.16.1">
   <img src="https://img.shields.io/badge/ByteBuddy-1.17.3-orange" alt="ByteBuddy 1.17.3">
 </p>
+
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Food/Hot%20Beverage.png" alt="Hot Beverage" width="400" height="400" />
 </div>
-
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Food/Hot%20Beverage.png" alt="Hot Beverage" width="40" height="40" />
-
 ---
 
 ### 💡 Overview
